@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-import Navbar from './components/header/Navbar/Navbar';
-import Wrapper from './components/Wrapper/Wrapper';
+import Navbar from './components/header/Navbar';
+import Wrapper from './components/main/Wrapper';
 import { Home, About, Projects, Contact } from './pages/export';
 
 function App() {
