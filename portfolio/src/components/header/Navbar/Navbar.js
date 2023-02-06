@@ -5,7 +5,7 @@ function Navbar() {
 	return (
 		<>
 			<nav className="navbar navbar-expand-lg navbar-light bg-light">
-				<span className="navbar-brand"></span>
+				<span className="navbar-brand">Santiago Gomez</span>
 				<button
 					className="navbar-toggler"
 					type="button"
@@ -61,6 +61,17 @@ function Navbar() {
 								}
 							>
 								Contact
+							</NavLink>
+						</li>
+						<li className="nav-item">
+							<NavLink
+								to="resume"
+								end
+								className={({ isActive }) =>
+									isActive ? 'nav-link active' : 'nav-link'
+								}
+							>
+								Resume
 							</NavLink>
 						</li>
 					</ul>
