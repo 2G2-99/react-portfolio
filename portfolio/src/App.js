@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-import Navbar from './components/header/Navbar';
-import Wrapper from './components/main/Wrapper';
+import { Navbar, Wrapper, Container } from './components/export';
 import { Home, About, Projects, Contact } from './pages/export';
 
 function App() {
@@ -11,14 +10,15 @@ function App() {
 				<Navbar>
 					<Wrapper>
 						<Routes>
-							<Route path="/" />
-							<Route path="/about" />
-							<Route path="/projects" />
-							<Route path="/contact" />
+							<Route path="/" element={<Home />} />
+							<Route path="/about" element={<About />} />
+							<Route path="/projects" element={<Projects />} />
+							<Route path="/contact" element={<Contact />} />
 						</Routes>
 					</Wrapper>
 				</Navbar>
 			</Router>
+			<Home />
 		</>
 	);
 }

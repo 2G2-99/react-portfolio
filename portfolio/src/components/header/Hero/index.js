@@ -1,4 +1,4 @@
-function Jumbotron() {
+function Hero() {
 	return (
 		<>
 			<div className="jumbotron jumbotron-fluid">
@@ -15,4 +15,4 @@ function Jumbotron() {
 	);
 }
 
-export default Jumbotron;
+export default Hero;
