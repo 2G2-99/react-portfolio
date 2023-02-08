@@ -1,3 +1,4 @@
+// # Imports of all images and SVGs
 import HTML5Logo from './html-5-svgrepo-com.svg';
 import CSSLogo from './css-3-svgrepo-com.svg';
 import JSLogo from './javascript-svgrepo-com.svg';
@@ -7,6 +8,7 @@ import JQueryLogo from './jquery-svgrepo-com.svg';
 import BootstrapLogo from './bootstrap-svgrepo-com.svg';
 import NodejsLogo from './node-js-svgrepo-com.svg';
 
+// # Exporting all assets all together for an easier importing when needed
 export {
 	HTML5Logo,
 	CSSLogo,
