@@ -5,21 +5,19 @@ import { Home, About, Projects, Contact } from './pages/export';
 
 function App() {
 	return (
-		<>
-			<Router>
-				<Navbar>
-					<Wrapper>
-						<Routes>
-							<Route path="/" element={<Home />} />
-							<Route path="/about" element={<About />} />
-							<Route path="/projects" element={<Projects />} />
-							<Route path="/contact" element={<Contact />} />
-						</Routes>
-					</Wrapper>
-				</Navbar>
-			</Router>
-			<Home />
-		</>
+		<Router>
+			<div>
+				<Navbar />
+				<Wrapper>
+					<Routes>
+						<Route path="/" element={<Home />} />
+						<Route path="/about" element={<About />} />
+						<Route path="/projects" element={<Projects />} />
+						<Route path="/contact" element={<Contact />} />
+					</Routes>
+				</Wrapper>
+			</div>
+		</Router>
 	);
 }
 
