@@ -1,3 +1,3 @@
-function Projects() {}
+const Projects = () => {};
 
 export default Projects;

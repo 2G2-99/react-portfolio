@@ -1,4 +1,4 @@
-function Hero() {
+const Hero = () => {
 	return (
 		<>
 			<div className="jumbotron col-xs-12 col-md-6 offset-md-3 my-5">
@@ -13,6 +13,6 @@ function Hero() {
 			</div>
 		</>
 	);
-}
+};
 
 export default Hero;
