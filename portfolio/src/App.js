@@ -1,9 +1,13 @@
+// # IMPORTS
+// REACT
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
+// COMPONENTS AND PAGES
 import { Navbar, Wrapper } from './components/export';
 import { Home, About, Projects, Contact } from './pages/export';
 
-function App() {
+// # APP FUNCTION
+const App = () => {
 	return (
 		<Router>
 			<div>
@@ -19,6 +23,6 @@ function App() {
 			</div>
 		</Router>
 	);
-}
+};
 
 export default App;

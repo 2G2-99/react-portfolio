@@ -1,5 +1,6 @@
+import Wrapper from './Wrapper/index';
+
 // MAIN COMPONENTS
-import Wrapper from './main/Wrapper/index';
 import Container from './main/Container/index';
 import Row from './main/Row/index';
 import Column from './main/Column/index';
