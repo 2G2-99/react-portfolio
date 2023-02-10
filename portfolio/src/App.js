@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-import { Navbar, Wrapper, Container } from './components/export';
+import { Navbar, Wrapper } from './components/export';
 import { Home, About, Projects, Contact } from './pages/export';
 
 function App() {
