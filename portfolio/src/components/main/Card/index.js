@@ -1,6 +1,7 @@
 import { GoTo, GitHubLogo } from '../../../assets/export';
 
 const Card = ({
+	id,
 	title,
 	picture,
 	description,
@@ -9,20 +10,6 @@ const Card = ({
 	deployed,
 }) => {
 	// # FUNCTIONS
-	// Generate Technology Badges
-	const generateBadgesOf = technologies => {
-		technologies.map(technology => {
-			return technology ? (
-				<li key={technology.id} className="list-group-item">
-					<img
-						className="tech-icons"
-						src={technology.path}
-						alt={`Logo of ${technology.technology}`}
-					/>
-				</li>
-			) : null;
-		});
-	};
 
 	// Generate link buttons
 	const generateButtonOf = (site, svg) => {
@@ -36,7 +23,7 @@ const Card = ({
 	};
 
 	return (
-		<div className={`card h-100`}>
+		<div className={`card h-100`} key={id}>
 			<h5 className="card-title">{title}</h5>
 			<img
 				src={picture}
@@ -45,9 +32,7 @@ const Card = ({
 			/>
 			<div className="card-body">
 				<p className="card-text">{description}</p>
-				<ul className="list-group list-group-horizontal">
-					{generateBadgesOf(technologies)}
-				</ul>
+				<ul className="list-group list-group-horizontal">{technologies}</ul>
 				<div className="btn-group" role="group" aria-label="Basic example">
 					{generateButtonOf(repository, GitHubLogo)}
 					{generateButtonOf(deployed, GoTo)}

@@ -12,10 +12,21 @@ const Projects = () => {
 				{listOfProjects.map(project => {
 					return (
 						<Card
+							key={project.id}
 							title={project.title}
 							picture={project.picture}
 							description={project.description}
-							technologies={project.technologies}
+							technologies={project.technologies.map(technology => {
+								return technology ? (
+									<li key={technology.id} className="list-group-item">
+										<img
+											className="tech-icons"
+											src={technology.path}
+											alt={`Logo of ${technology.technology}`}
+										/>
+									</li>
+								) : null;
+							})}
 							repository={project.repository}
 							deployed={project.deployed}
 						/>
