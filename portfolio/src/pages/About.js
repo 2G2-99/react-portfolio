@@ -14,7 +14,7 @@ import {
 const About = () => {
 	return (
 		<>
-			<Container className={'container-fluid'}>
+			<Container type={'container'}>
 				<Row>
 					<Column size={'col-12'}>
 						<div className="card card-intro">
