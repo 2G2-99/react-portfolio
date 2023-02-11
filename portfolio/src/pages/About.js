@@ -9,7 +9,7 @@ import {
 	JQueryLogo,
 	BootstrapLogo,
 	NodejsLogo,
-} from '../assets/svg/export';
+} from '../assets/export';
 
 const About = () => {
 	return (
