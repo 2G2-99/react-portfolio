@@ -10,21 +10,30 @@ const Projects = () => {
 		<>
 			<Container>
 				<Row>
-					<Column className={'col-12 col-md-6'}>
-						{listOfProjects.map(project => {
-							return (
+					{listOfProjects.map(project => {
+						return (
+							<Column size={'col-12 col-md-6'}>
 								<Card
-									id={project.id}
 									title={project.title}
 									picture={project.picture}
 									description={project.description}
-									technologies={project.technologies}
+									technologies={project.technologies.map(technology => {
+										return technology ? (
+											<li key={technology.id} className="list-group-item">
+												<img
+													className="tech-icons"
+													src={technology.path}
+													alt={`Technology ${technology.technology}`}
+												/>
+											</li>
+										) : null;
+									})}
 									repository={project.repository}
 									deployed={project.deployed}
-								/>
-							);
-						})}
-					</Column>
+								/>{' '}
+							</Column>
+						);
+					})}
 				</Row>
 			</Container>
 		</>

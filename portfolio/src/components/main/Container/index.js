@@ -1,7 +1,7 @@
-const Container = ({ type, styles, children }) => {
+const Container = ({ styles, children }) => {
 	return (
 		<>
-			<div className={type} style={styles}>
+			<div className="container" style={styles}>
 				{children}
 			</div>
 		</>

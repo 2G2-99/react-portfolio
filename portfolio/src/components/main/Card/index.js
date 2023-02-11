@@ -1,5 +1,6 @@
+import { GoTo, GitHubLogo } from '../../../assets/export';
+
 const Card = ({
-	id,
 	title,
 	picture,
 	description,
@@ -7,50 +8,32 @@ const Card = ({
 	repository,
 	deployed,
 }) => {
-	const checkContentOf = content => {
-		if (!content) {
-			return null;
-		}
-	};
-
-	const generateBadgesOf = technologies => {
-		technologies.map(technology => {
-			return (
-				<>
-					<li key={id} className="list-group-item">
-						<img className="tech-icons" src={technology} alt="#" />
-					</li>
-				</>
-			);
-		});
-	};
-
-	const generateButtonOf = site => {
-		return (
-			<>
-				<button type="button" class={`btn btn-secondary btn-${site}`}>
-					<img src={site} alt={`Link to ${site}`} />
+	// # FUNCTIONS
+	// Generate link buttons
+	const generateButtonOf = (site, svg) => {
+		return site ? (
+			<a href={site}>
+				<button type="button" className={`btn btn-secondary`}>
+					<img src={svg} alt={`Link to ${site}	`} />
 				</button>
-			</>
-		);
+			</a>
+		) : null;
 	};
 
 	return (
-		<div key={id} class={`card card-${title}`}>
-			<h5 class="card-title">{checkContentOf(title)}</h5>
+		<div className={`card card-${title}`}>
+			<h5 className="card-title">{title}</h5>
 			<img
-				src={checkContentOf(picture)}
-				class="card-img-top"
+				src={picture}
+				className="card-img-top"
 				alt={`Screenshot of ${title}`}
 			/>
-			<div class="card-body">
-				<p class="card-text">{checkContentOf(description)}</p>
-				<ul className="list-group list-group-horizontal">
-					{generateBadgesOf(technologies)}
-				</ul>
-				<div class="btn-group" role="group" aria-label="Basic example">
-					{generateButtonOf(repository)}
-					{generateButtonOf(deployed)}
+			<div className="card-body">
+				<p className="card-text">{description}</p>
+				<ul className="list-group list-group-horizontal">{technologies}</ul>
+				<div className="btn-group" role="group" aria-label="Basic example">
+					{generateButtonOf(repository, GitHubLogo)}
+					{generateButtonOf(deployed, GoTo)}
 				</div>
 			</div>
 		</div>
