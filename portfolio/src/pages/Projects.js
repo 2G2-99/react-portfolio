@@ -3,7 +3,7 @@
 import { Container, Row, Card } from '../components/export';
 
 // PROJECTS JSON
-import listOfProjects from '../listOfProjects.json';
+import listOfProjects from '../data/listOfProjects.json';
 
 const Projects = () => {
 	return (
@@ -14,14 +14,14 @@ const Projects = () => {
 						<Card
 							key={project.id}
 							title={project.title}
-							picture={project.picture}
+							picture={`${project.picture}`}
 							description={project.description}
 							technologies={project.technologies.map(technology => {
 								return technology ? (
 									<li key={technology.id} className="list-group-item">
 										<img
 											className="tech-icons"
-											src={technology.path}
+											src={`${technology.path}`}
 											alt={`Logo of ${technology.technology}`}
 										/>
 									</li>
