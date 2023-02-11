@@ -1,2 +1,2 @@
-const Row = ({ children }) => <div className="row">{children}</div>;
+const Row = ({ type, children }) => <div className={type}>{children}</div>;
 export default Row;

@@ -14,9 +14,9 @@ import {
 const About = () => {
 	return (
 		<>
-			<Container className={'container-fluid'}>
+			<Container type={'container'}>
 				<Row>
-					<Column className={'col-12'}>
+					<Column size={'col-12'}>
 						<div className="card card-intro">
 							<div className="card-body">
 								<p className="card-text">
@@ -33,7 +33,7 @@ const About = () => {
 					</Column>
 				</Row>
 				<Row>
-					<Column className={'col-12 col-md-6'}>
+					<Column size={'col-12 col-md-6'}>
 						<div className="card card-experience">
 							<div className="card-body">
 								<h3 className="card-heading">Experience</h3>
@@ -44,7 +44,7 @@ const About = () => {
 							</div>
 						</div>
 					</Column>
-					<Column className={'col-12 col-md-6'}>
+					<Column size={'col-12 col-md-6'}>
 						<div className="card card-skills">
 							<div className="card-body">
 								<h3 className="card-heading">Skills</h3>
