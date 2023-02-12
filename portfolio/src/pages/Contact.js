@@ -21,8 +21,8 @@ const Contact = () => {
 								</p>
 							</Row>
 							<Row type={'row'}>
-								<ul class="list-group list-group-horizontal">
-									<li class="list-group-item">
+								<ul className="list-group list-group-horizontal">
+									<li className="list-group-item">
 										<a
 											href={
 												'https://www.linkedin.com/in/santiago-gomez-837297215/'
@@ -31,12 +31,12 @@ const Contact = () => {
 											<img src={Linkedin} alt={`Linkedin Logo`} />
 										</a>
 									</li>
-									<li class="list-group-item">
+									<li className="list-group-item">
 										<a href={'https://github.com/2G2-99'}>
 											<img src={GitHubLogo} alt={'GitHub Logo'} />
 										</a>
 									</li>
-									<li class="list-group-item">
+									<li className="list-group-item">
 										<a href={'mailto:sagos0919@gmail.com'}>
 											<img src={mailEnvelope} alt={'Email envelope symbol'} />
 										</a>

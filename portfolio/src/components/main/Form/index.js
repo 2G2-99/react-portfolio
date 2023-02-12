@@ -25,7 +25,7 @@ const Form = () => {
 		<>
 			<form>
 				<div className="form-group">
-					<label for="user-email">Email</label>
+					<label htmlFor="user-email">Email</label>
 					<input
 						type={'email'}
 						className="form-control"
@@ -36,7 +36,7 @@ const Form = () => {
 					/>
 				</div>
 				<div className="form-group">
-					<label for="message-subject">Subject</label>
+					<label htmlFor="message-subject">Subject</label>
 					<input
 						type={'text'}
 						className="form-control"
@@ -47,7 +47,7 @@ const Form = () => {
 					/>
 				</div>
 				<div className="form-group">
-					<label for="message-body">Text Area</label>
+					<label htmlFor="message-body">Text Area</label>
 					<textarea
 						className="form-control"
 						id="message-body"
