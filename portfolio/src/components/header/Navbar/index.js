@@ -1,5 +1,9 @@
-import React from 'react';
+// # IMPORTS
+// REACT
 import { NavLink } from 'react-router-dom';
+
+// STYLE
+import './index.css';
 
 const Navbar = () => {
 	return (
@@ -7,7 +11,7 @@ const Navbar = () => {
 			<nav className="custom-navbar navbar fixed-top flex-column flex-md-row  navbar-expand  justify-content-between">
 				<span className="navbar-brand">Santiago Gomez</span>
 
-				<ul className="navbar-nav nav nav-tabs">
+				<ul className="navbar-nav nav nav-tabs border-bottom-0">
 					<li className="nav-item">
 						<NavLink
 							to="/"

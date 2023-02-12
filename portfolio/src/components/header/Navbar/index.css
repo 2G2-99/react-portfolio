@@ -1,0 +1,46 @@
+:root {
+	/* Palette */
+	--yamber: #ffc10d;
+	--yimn-blue: #184e81;
+	--picton-blue: #56ace0;
+	--ut-orange: #fb8500;
+}
+
+.custom-navbar {
+	background-color: var(--yimn-blue);
+	color: white;
+	font-family: 'VT323', monospace;
+	height: 4em;
+}
+
+.custom-navbar span {
+	font-size: 3em;
+}
+
+.navbar-nav {
+	border: none;
+	bottom: 0;
+	position: absolute;
+	right: 1em;
+}
+
+.nav-item {
+	font-size: 1.5em;
+	margin-bottom: 0;
+}
+
+.nav-tabs > li > a.active {
+	background-color: var(--picton-blue) !important;
+	border: 0;
+	color: white;
+}
+
+.nav-tabs > li > a.nav-link:focus,
+.nav-tabs > li > a.nav-link:hover {
+	border: 0;
+	color: white;
+}
+
+.nav-tabs > li > a.nav-link:visited {
+	color: white;
+}
