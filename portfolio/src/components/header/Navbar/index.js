@@ -63,17 +63,6 @@ const Navbar = () => {
 								Contact
 							</NavLink>
 						</li>
-						<li className="nav-item">
-							<NavLink
-								to="resume"
-								end
-								className={({ isActive }) =>
-									isActive ? 'nav-link active' : 'nav-link'
-								}
-							>
-								Resume
-							</NavLink>
-						</li>
 					</ul>
 				</div>
 			</nav>

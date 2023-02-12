@@ -8,6 +8,9 @@ import JQueryLogo from './svg/jquery-svgrepo-com.svg';
 import BootstrapLogo from './svg/bootstrap-svgrepo-com.svg';
 import NodejsLogo from './svg/node-js-svgrepo-com.svg';
 import GoTo from './svg/internet-www-svgrepo-com.svg';
+import Linkedin from './svg/linkedin-svgrepo-com.svg';
+import mailEnvelope from './svg/email-svgrepo-com.svg';
+import pdfFile from './svg/pdf-svgrepo-com.svg';
 
 // # Exporting all SVGs together for an easier importing when needed
 export {
@@ -20,4 +23,7 @@ export {
 	BootstrapLogo,
 	NodejsLogo,
 	GoTo,
+	Linkedin,
+	mailEnvelope,
+	pdfFile,
 };

@@ -17,11 +17,15 @@ const Form = () => {
 		setMessage(e.target.value);
 	};
 
+	const handleSubmit = e => {
+		e.preventDefault();
+	};
+
 	return (
 		<>
 			<form>
 				<div className="form-group">
-					<label for="user-email">email</label>
+					<label for="user-email">Email</label>
 					<input
 						type={'email'}
 						className="form-control"
@@ -30,7 +34,9 @@ const Form = () => {
 						value={email}
 						onChange={handleEmail}
 					/>
-					<label for="message-subject">subject</label>
+				</div>
+				<div className="form-group">
+					<label for="message-subject">Subject</label>
 					<input
 						type={'text'}
 						className="form-control"
@@ -39,7 +45,9 @@ const Form = () => {
 						value={subject}
 						onChange={handleSubject}
 					/>
-					<label for="message-body">text area</label>
+				</div>
+				<div className="form-group">
+					<label for="message-body">Text Area</label>
 					<textarea
 						className="form-control"
 						id="message-body"
@@ -48,7 +56,16 @@ const Form = () => {
 						onChange={handleMessage}
 					></textarea>
 				</div>
+				<button
+					type="submit"
+					className="btn btn-primary"
+					onClick={handleSubmit}
+				>
+					SEND
+				</button>
 			</form>
 		</>
 	);
 };
+
+export default Form;
