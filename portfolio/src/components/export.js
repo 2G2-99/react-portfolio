@@ -1,14 +1,15 @@
-import Wrapper from './Wrapper/index';
+import Wrapper from './Wrapper';
 
 // MAIN COMPONENTS
-import Container from './main/Container/index';
-import Row from './main/Row/index';
-import Column from './main/Column/index';
-import Card from './main/Card/index';
+import Container from './main/Container';
+import Row from './main/Row';
+import Column from './main/Column';
+import Card from './main/Card';
+import Form from './main/Form';
 
 // HEADER COMPONENTS
-import Hero from './header/Hero/index';
-import Navbar from './header/Navbar/index';
+import Hero from './header/Hero';
+import Navbar from './header/Navbar';
 
 // # Exporting components
-export { Wrapper, Container, Row, Column, Card, Hero, Navbar };
+export { Wrapper, Container, Row, Column, Card, Form, Hero, Navbar };

@@ -32,7 +32,7 @@ const About = () => {
 						</div>
 					</Column>
 				</Row>
-				<Row>
+				<Row type={'row'}>
 					<Column size={'col-12 col-md-6'}>
 						<div className="card card-experience">
 							<div className="card-body">
@@ -49,29 +49,32 @@ const About = () => {
 							<div className="card-body">
 								<h3 className="card-heading">Skills</h3>
 								<div className="skills-container">
-									<ul className="skills">
-										<li className="skill" id="html5">
+									<ul className="list-group list-group-horizontal">
+										<li className="list-group-item">
 											<img src={HTML5Logo} alt="HTML5 logo" />
 										</li>
-										<li className="skill" id="css3">
+										<li className="list-group-item">
 											<img src={CSSLogo} alt="" />
 										</li>
-										<li className="skill" id="javascript">
+										<li className="list-group-item">
 											<img src={JSLogo} alt="" />
 										</li>
-										<li className="skill" id="git">
+										<li className="list-group-item">
 											<img src={GITLogo} alt="" />
 										</li>
-										<li className="skill" id="github">
+										<li className="list-group-item">
 											<img src={GitHubLogo} alt="" />
 										</li>
-										<li className="skill" id="jquery">
+										<li className="list-group-item">
+											<img src={GitHubLogo} alt="" />
+										</li>
+										<li className="list-group-item">
 											<img src={JQueryLogo} alt="" />
 										</li>
-										<li className="skill" id="bootstrap">
+										<li className="list-group-item">
 											<img src={BootstrapLogo} alt="" />
 										</li>
-										<li className="skill" id="nodejs">
+										<li className="list-group-item">
 											<img src={NodejsLogo} alt="" />
 										</li>
 									</ul>
