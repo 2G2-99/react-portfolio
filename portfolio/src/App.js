@@ -1,13 +1,12 @@
 // # IMPORTS
 // REACT
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+// STYLE
+import './App.css';
 
 // COMPONENTS AND PAGES
 import { Navbar, Wrapper } from './components/export';
 import { Home, About, Projects, Contact } from './pages/export';
-
-// STYLE
-import './App.css';
 
 // # APP FUNCTION
 const App = () => {
