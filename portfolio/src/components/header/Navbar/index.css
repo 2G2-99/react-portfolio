@@ -9,12 +9,12 @@
 .custom-navbar {
 	background-color: var(--yimn-blue);
 	color: white;
-	font-family: 'VT323', monospace;
+	font-family: 'Bungee', cursive;
 	height: 4em;
 }
 
 .custom-navbar span {
-	font-size: 3em;
+	font-size: 2em;
 }
 
 .navbar-nav {
@@ -25,7 +25,6 @@
 }
 
 .nav-item {
-	font-size: 1.5em;
 	margin-bottom: 0;
 }
 
@@ -35,12 +34,11 @@
 	color: white;
 }
 
-.nav-tabs > li > a.nav-link:focus,
-.nav-tabs > li > a.nav-link:hover {
-	border: 0;
+.nav-tabs > li > a.nav-link:visited {
 	color: white;
 }
 
-.nav-tabs > li > a.nav-link:visited {
-	color: white;
+.nav-tabs > li > a.nav-link:hover {
+	border: none;
+	color: var(--yamber);
 }

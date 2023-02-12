@@ -1,15 +1,28 @@
-import { Container, Hero } from '../components/export';
+import { Container, Row, Hero } from '../components/export';
 
 const Home = () => {
 	return (
 		<>
-			<Container
-				type={
-					'container-fluid d-flex justify-content-center align-items-center'
-				}
-			>
-				<Hero />
-			</Container>
+			<Row type={'row'}>
+				<Container
+					type={
+						'container-fluid d-flex justify-content-center align-items-center'
+					}
+				>
+					<Hero />
+				</Container>
+			</Row>
+			<span className="attribution">
+				Background by:{' '}
+				<a
+					id="attribution-link"
+					href="https://svgbackgrounds.com"
+					target={'_blank'}
+					rel="noreferrer noopener"
+				>
+					SVGBackgrounds.com
+				</a>
+			</span>
 		</>
 	);
 };

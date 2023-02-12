@@ -1,0 +1,52 @@
+:root {
+	/* Palette */
+	--yamber: #ffc10d;
+	--yimn-blue: #184e81;
+	--picton-blue: #56ace0;
+	--ut-orange: #fb8500;
+}
+
+main {
+	background-attachment: fixed;
+	background-color: #56ace0;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%2378b0b6' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%239ab48c' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23bbb961' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23ddbd37' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23FFC10D' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+	background-size: cover;
+	/* background by SVGBackgrounds.com */
+}
+
+#custom-hero {
+	background-color: white;
+	border-radius: 1em;
+}
+
+#custom-hero h1 {
+	color: var(--yimn-blue);
+	font-family: 'Bungee', cursive;
+}
+
+.lead {
+	border-top: 2px solid var(--yamber);
+	font-family: 'Josefin Sans', sans-serif;
+	padding-top: 0.25em;
+}
+
+.attribution {
+	bottom: 0;
+	color: black;
+	font-family: 'Bungee', cursive;
+	margin-right: 0.25em;
+	position: fixed;
+	right: 0;
+}
+
+#attribution-link,
+#attribution-link:visited {
+	color: var(--yimn-blue);
+	text-decoration: none;
+}
+
+/* 
+    font-family: 'Bungee', cursive;
+
+    font-family: 'Josefin Sans', sans-serif;
+ */

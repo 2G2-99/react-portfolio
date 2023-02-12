@@ -1,6 +1,6 @@
 const Wrapper = ({ children }) => {
 	return (
-		<main className="wrapper container-fluid d-flex justify-content-center align-content-center vh-100">
+		<main className="wrapper container-fluid d-flex flex-wrap justify-content-center align-content-center vh-100">
 			{children}
 		</main>
 	);

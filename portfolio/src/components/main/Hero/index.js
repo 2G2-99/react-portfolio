@@ -1,13 +1,14 @@
+import './index.css';
+
 const Hero = () => {
 	return (
 		<>
-			<div className="jumbotron jumbotron-fluid">
+			<div className="jumbotron jumbotron-fluid" id="custom-hero">
 				<div className="container text-center">
-					<h1 className="display-4">Santiago Gomez</h1>
-					<span className="lead">Welcome to my website! </span>
+					<h1 className="display-4">Welcome to my website! </h1>
 					<p className="lead">
-						I'm passionate about video games and music. Currently studying to
-						become a Web-Developer developer based on London.
+						I'm a front-end developer based on London. Passionate about books,
+						video games and music.
 					</p>
 				</div>
 			</div>
