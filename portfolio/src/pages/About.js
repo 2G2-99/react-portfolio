@@ -66,9 +66,6 @@ const About = () => {
 											<img src={GitHubLogo} alt="" />
 										</li>
 										<li className="list-group-item">
-											<img src={GitHubLogo} alt="" />
-										</li>
-										<li className="list-group-item">
 											<img src={JQueryLogo} alt="" />
 										</li>
 										<li className="list-group-item">
