@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 const Navbar = () => {
 	return (
 		<>
-			<nav className="navbar fixed-top flex-column flex-md-row  navbar-expand navbar-light bg-light justify-content-between">
+			<nav className="custom-navbar navbar fixed-top flex-column flex-md-row  navbar-expand  justify-content-between">
 				<span className="navbar-brand">Santiago Gomez</span>
 
 				<ul className="navbar-nav nav nav-tabs">

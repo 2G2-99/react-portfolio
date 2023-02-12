@@ -3,7 +3,11 @@ import { Container, Hero } from '../components/export';
 const Home = () => {
 	return (
 		<>
-			<Container className="container-fluid d-flex align-items-center">
+			<Container
+				type={
+					'container-fluid d-flex justify-content-center align-items-center'
+				}
+			>
 				<Hero />
 			</Container>
 		</>

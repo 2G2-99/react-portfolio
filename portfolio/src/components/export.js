@@ -8,7 +8,7 @@ import Card from './main/Card';
 import Form from './main/Form';
 
 // HEADER COMPONENTS
-import Hero from './header/Hero';
+import Hero from './main/Hero';
 import Navbar from './header/Navbar';
 
 // # Exporting components
