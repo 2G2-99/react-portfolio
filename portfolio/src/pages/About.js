@@ -15,7 +15,7 @@ const About = () => {
 	return (
 		<>
 			<Container type={'container'}>
-				<Row>
+				<Row type={'row'}>
 					<Column size={'col-12'}>
 						<div className="card card-intro">
 							<div className="card-body">

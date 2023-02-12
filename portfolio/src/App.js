@@ -6,21 +6,22 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Navbar, Wrapper } from './components/export';
 import { Home, About, Projects, Contact } from './pages/export';
 
+// STYLE
+import './App.css';
+
 // # APP FUNCTION
 const App = () => {
 	return (
 		<Router>
-			<div>
-				<Navbar />
-				<Wrapper>
-					<Routes>
-						<Route path="/" element={<Home />} />
-						<Route path="/about" element={<About />} />
-						<Route path="/projects" element={<Projects />} />
-						<Route path="/contact" element={<Contact />} />
-					</Routes>
-				</Wrapper>
-			</div>
+			<Navbar />
+			<Wrapper>
+				<Routes>
+					<Route path="/" element={<Home />} />
+					<Route path="/about" element={<About />} />
+					<Route path="/projects" element={<Projects />} />
+					<Route path="/contact" element={<Contact />} />
+				</Routes>
+			</Wrapper>
 		</Router>
 	);
 };
