@@ -59,7 +59,6 @@ const About = () => {
 											Resume
 										</a>
 									</button>
-									{/*  */}
 								</Row>
 							</div>
 						</div>

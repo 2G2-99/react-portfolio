@@ -23,6 +23,7 @@ const Projects = () => {
 											className="tech-icons"
 											src={`${technology.path}`}
 											alt={`Logo of ${technology.technology}`}
+											style={{ height: '2em' }}
 										/>
 									</li>
 								) : null;
