@@ -43,9 +43,9 @@ const Card = ({
 				className="project-image  card-img-top"
 				alt={`Screenshot of ${title}`}
 			/>
-			<div className="card-body">
+			<div className="card-body h-100">
 				<p className="card-text">{description}</p>
-				<ul className="technologies  list-group list-group-horizontal">
+				<ul id="technologies" className="list-group list-group-horizontal">
 					{technologies}
 				</ul>
 				<div className="btn-group" role="group" aria-label="Basic example">
