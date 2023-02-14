@@ -1,14 +1,12 @@
 // # IMPORTS
 // COMPONENTS
-import { Container, Row, Column } from '../components/export';
+import { Container, Row, Column, Card } from '../components/export';
 
 // SVG
 import {
 	HTML5Logo,
 	CSSLogo,
 	JSLogo,
-	GITLogo,
-	GitHubLogo,
 	JQueryLogo,
 	BootstrapLogo,
 	NodejsLogo,
@@ -47,12 +45,28 @@ const About = () => {
 									</p>
 									<p className="card-text"></p>
 								</Row>
+								<Row type={'row'}>
+									<button className="btn-resume-pushable">
+										<span className="btn-resume-shadow"></span>
+										<span className="btn-resume-edge"></span>
+										<a
+											className="btn-resume-front text"
+											href="https://drive.google.com/file/d/1k5YBTciucnt3N5Dxceq2FNJp9iv7Y21l/view?usp=sharing"
+											role="button"
+											target="_blank"
+											rel="noreferrer"
+										>
+											Resume
+										</a>
+									</button>
+									{/*  */}
+								</Row>
 							</div>
 						</div>
 					</Column>
 				</Row>
 				<Row type={'row'}>
-					<Column size={'col-12 col-md-6'}>
+					<Column size={'col-12'}>
 						<div className="card custom-card" id="card-experience">
 							<div className="card-body">
 								<h3 className="card-heading">Experience</h3>
@@ -65,34 +79,37 @@ const About = () => {
 							</div>
 						</div>
 					</Column>
-					<Column size={'col-12 col-md-6'}>
+				</Row>
+				<Row type={'row'}>
+					<Column size={'col-12'}>
 						<div className="card custom-card" id="card-skills">
 							<div className="card-body">
 								<h3 className="card-heading">Skills</h3>
-								<div className="skills-container">
-									<p>I'm well experienced in this technologies... </p>
-									<ul className="list-group list-group-horizontal">
-										<li className="list-group-item">
-											<img
-												className="svg-logo"
-												src={HTML5Logo}
-												alt="HTML5 logo"
-											/>
-										</li>
-										<li className="list-group-item">
-											<img className="svg-logo" src={CSSLogo} alt="" />
-										</li>
-										<li className="list-group-item">
-											<img className="svg-logo" src={JSLogo} alt="" />
-										</li>
-										<li className="list-group-item">
-											<img className="svg-logo" src={BootstrapLogo} alt="" />
-										</li>
-										<li className="list-group-item">
-											<img className="svg-logo" src={NodejsLogo} alt="" />
-										</li>
-									</ul>
-								</div>
+								<p>I'm well experienced in this technologies... </p>
+								<ul
+									id="skills-set"
+									className="list-group list-group-horizontal"
+								>
+									<li className="custom-li  list-group-item">
+										<img
+											className="svg-logo"
+											src={HTML5Logo}
+											alt="HTML5 logo"
+										/>
+									</li>
+									<li className="custom-li  list-group-item">
+										<img className="svg-logo" src={CSSLogo} alt="" />
+									</li>
+									<li className="custom-li  list-group-item">
+										<img className="svg-logo" src={JSLogo} alt="" />
+									</li>
+									<li className="custom-li  list-group-item">
+										<img className="svg-logo" src={BootstrapLogo} alt="" />
+									</li>
+									<li className="custom-li  list-group-item">
+										<img className="svg-logo" src={NodejsLogo} alt="" />
+									</li>
+								</ul>
 							</div>
 						</div>
 					</Column>
