@@ -1,0 +1,39 @@
+:root {
+	/* Palette */
+	--yamber: #ffc10d;
+	--yimn-blue: #184e81;
+	--picton-blue: #56ace0;
+	--ut-orange: #fb8500;
+	font-size: 16px;
+}
+
+/* IMAGES */
+.project-image {
+	border-radius: 0.5em;
+	width: auto;
+}
+
+#technologies {
+	background-color: #56ace0;
+	border-radius: 0.5em;
+	display: flex;
+	justify-content: flex-start;
+	margin-bottom: 2em;
+	margin-left: 0;
+	width: fit-content;
+}
+
+.technology {
+	background-color: transparent;
+	border: none;
+	border-radius: 0.5em !important;
+	margin: 0.25em;
+	padding: 0.25em 0.5em;
+}
+
+/* SVG */
+.tech-icon {
+	display: block;
+	height: 3em;
+	margin: auto;
+}

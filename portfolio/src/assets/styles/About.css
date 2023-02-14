@@ -1,0 +1,207 @@
+:root {
+	/* Palette */
+	--yamber: #ffc10d;
+	--yimn-blue: #184e81;
+	--picton-blue: #56ace0;
+	--ut-orange: #fb8500;
+	font-size: 16px;
+}
+
+.custom-card {
+	background-color: white;
+	border-radius: 0.5em;
+	margin: 1em;
+}
+
+/* INTRODUCTION */
+#card-intro {
+	background-color: var(--yimn-blue);
+	color: white;
+}
+
+#card-intro .card-text {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1.125em;
+	padding: 0 0.5em;
+	text-align: justify;
+}
+
+#greeting {
+	color: var(--ut-orange);
+	font-size: 1.25em;
+}
+
+/* IMAGE */
+img {
+	border-radius: 0.5em;
+	height: 24em;
+	margin: auto;
+	margin-bottom: 1em;
+}
+
+/* BUTTON */
+.btn-resume-pushable {
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	margin: auto 1em auto auto;
+	outline-offset: 4px;
+	padding: 0;
+	position: relative;
+	touch-action: manipulation;
+	transition: filter 250ms;
+	user-select: none;
+	-webkit-user-select: none;
+}
+
+.btn-resume-shadow {
+	background: hsl(0deg 0% 0% / 0.25);
+	border-radius: 12px;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	transform: translateY(2px);
+	transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+	width: 100%;
+	will-change: transform;
+}
+
+.btn-resume-edge {
+	background: linear-gradient(
+		to left,
+		hsl(32 100% 16%) 0%,
+		hsl(32 100% 32%) 8%,
+		hsl(32 100% 32%) 92%,
+		hsl(32 100% 16%) 100%
+	);
+	border-radius: 12px;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.btn-resume-front {
+	background-color: var(--ut-orange);
+	border-radius: 12px;
+	color: var(--yimn-blue);
+	display: block;
+	font-family: 'Bungee', cursive;
+	font-size: 1.1rem;
+	padding: 12px 27px;
+	position: relative;
+	transform: translateY(-4px);
+	transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+	will-change: transform;
+}
+
+@media (min-width: 768px) {
+	.btn-resume-front {
+		font-size: 1.25rem;
+		padding: 12px 42px;
+	}
+}
+
+.btn-resume-pushable:hover {
+	filter: brightness(110%);
+	-webkit-filter: brightness(110%);
+}
+
+.btn-resume-pushable:hover .btn-resume-front {
+	transform: translateY(-6px);
+	transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+
+.btn-resume-pushable:active .btn-resume-front {
+	transform: translateY(-2px);
+	transition: transform 34ms;
+}
+
+.btn-resume-pushable:hover .btn-resume-shadow {
+	transform: translateY(4px);
+	transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+
+.btn-resume-pushable:active .btn-resume-shadow {
+	transform: translateY(1px);
+	transition: transform 34ms;
+}
+
+.btn-resume-pushable:focus:not(:focus-visible) {
+	outline: none;
+}
+
+.btn-resume-pushable a {
+	color: var(--yimn-blue);
+	font-family: 'Bungee', cursive;
+	text-decoration: none;
+}
+
+/* EXPERIENCE */
+#card-experience {
+	background-color: var(--picton-blue);
+}
+
+#card-experience h3 {
+	color: var(--yamber);
+	font-family: 'Bungee', cursive;
+}
+
+#card-experience ul {
+	color: var(--yimn-blue);
+	font-size: 1.25em;
+	list-style: none;
+}
+
+#card-experience li::before {
+	color: var(--ut-orange);
+	content: '<	';
+}
+
+#card-experience li::after {
+	color: var(--ut-orange);
+	content: '	/>';
+}
+
+/* SKILLS */
+#card-skills {
+	background-color: white;
+	color: var(--yimn-blue);
+}
+
+#card-skills h3 {
+	font-family: 'Bungee', cursive;
+}
+
+#card-skills p {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1.125em;
+}
+
+#skills-set {
+	display: flex;
+	justify-content: center;
+}
+
+#skills-set .custom-li {
+	background-color: transparent;
+	border: none;
+	height: auto;
+	padding: 0.25em 0.5em;
+}
+
+/* SVG */
+.svg-logo {
+	display: block;
+	height: 2.5em;
+	margin: auto;
+}
+
+/* SVG ON RESIZING */
+@media only screen and (min-width: 992px) {
+	.svg-logo {
+		height: 3.25em;
+	}
+}
