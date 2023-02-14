@@ -31,7 +31,7 @@
 .nav-tabs > li > a.active {
 	background-color: var(--picton-blue) !important;
 	border: 0;
-	color: white;
+	color: var(--ut-orange) !important;
 }
 
 .nav-tabs > li > a.nav-link:visited {

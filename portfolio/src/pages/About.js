@@ -1,5 +1,8 @@
 // # IMPORTS
+// COMPONENTS
 import { Container, Row, Column } from '../components/export';
+
+// SVG
 import {
 	HTML5Logo,
 	CSSLogo,
@@ -9,7 +12,11 @@ import {
 	JQueryLogo,
 	BootstrapLogo,
 	NodejsLogo,
+	selfie,
 } from '../assets/export';
+
+// STYLE
+import '../assets/styles/About.css';
 
 const About = () => {
 	return (
@@ -17,62 +24,72 @@ const About = () => {
 			<Container type={'container'}>
 				<Row type={'row'}>
 					<Column size={'col-12'}>
-						<div className="card card-intro">
+						<div className="card custom-card" id="card-intro">
 							<div className="card-body">
-								<p className="card-text">
-									Hello! I'm attending a web development boot camp with the
-									intention to become a full stack web developer.
-								</p>
-								<p className="card-text">
-									There has always been a huge gap about the use and knowledge
-									of the technology we use every day. And there is much to
-									discover and create with all the tools we have now.
-								</p>
+								<Row type={'row'}>
+									<img alt="That's me" src={selfie} />
+								</Row>
+								<Row type={'row'}>
+									<p className="card-text">
+										<span id="greeting">Hello again!</span> as you might have
+										seen on the top of the page, my name is Santiago and I'm a
+										front-end developer with experience in hospitality. To be
+										more exact, in restaurants since I enjoy cooking and
+										preparing food as much as eating it.
+									</p>
+									<p className="card-text">
+										Having experienced what is to work in a fast paced
+										environment has given me the opportunity to learn about how
+										to work under pressure and still achieve great results. Now
+										I'm looking on another direction trying to take on a
+										challenge as a web developer, in a constantly innovating
+										industry.
+									</p>
+									<p className="card-text"></p>
+								</Row>
 							</div>
 						</div>
 					</Column>
 				</Row>
 				<Row type={'row'}>
 					<Column size={'col-12 col-md-6'}>
-						<div className="card card-experience">
+						<div className="card custom-card" id="card-experience">
 							<div className="card-body">
 								<h3 className="card-heading">Experience</h3>
-								<p className="card-text">
-									Certificate of front-end developer from Trilogy Skills Boot
-									camp
-								</p>
+								<ul id="experience-set">
+									<li className="experience">
+										Certificate of front-end developer from Trilogy Skills Boot
+										camp
+									</li>
+								</ul>
 							</div>
 						</div>
 					</Column>
 					<Column size={'col-12 col-md-6'}>
-						<div className="card card-skills">
+						<div className="card custom-card" id="card-skills">
 							<div className="card-body">
 								<h3 className="card-heading">Skills</h3>
 								<div className="skills-container">
+									<p>I'm well experienced in this technologies... </p>
 									<ul className="list-group list-group-horizontal">
 										<li className="list-group-item">
-											<img src={HTML5Logo} alt="HTML5 logo" />
+											<img
+												className="svg-logo"
+												src={HTML5Logo}
+												alt="HTML5 logo"
+											/>
 										</li>
 										<li className="list-group-item">
-											<img src={CSSLogo} alt="" />
+											<img className="svg-logo" src={CSSLogo} alt="" />
 										</li>
 										<li className="list-group-item">
-											<img src={JSLogo} alt="" />
+											<img className="svg-logo" src={JSLogo} alt="" />
 										</li>
 										<li className="list-group-item">
-											<img src={GITLogo} alt="" />
+											<img className="svg-logo" src={BootstrapLogo} alt="" />
 										</li>
 										<li className="list-group-item">
-											<img src={GitHubLogo} alt="" />
-										</li>
-										<li className="list-group-item">
-											<img src={JQueryLogo} alt="" />
-										</li>
-										<li className="list-group-item">
-											<img src={BootstrapLogo} alt="" />
-										</li>
-										<li className="list-group-item">
-											<img src={NodejsLogo} alt="" />
+											<img className="svg-logo" src={NodejsLogo} alt="" />
 										</li>
 									</ul>
 								</div>
