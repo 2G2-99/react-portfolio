@@ -1,0 +1,133 @@
+:root {
+	/* Palette */
+	--yamber: #ffc10d;
+	--yimn-blue: #184e81;
+	--picton-blue: #56ace0;
+	--ut-orange: #fb8500;
+	font-size: 16px;
+}
+
+/* GREETING CONTACT */
+#contact-greeting {
+	color: var(--yamber);
+	font-family: 'Bungee', cursive;
+}
+
+p {
+	color: white;
+	font-family: 'Josefin Sans';
+	font-size: 1.125em;
+}
+
+#contact-list {
+}
+
+.contact-item {
+	background-color: transparent;
+	border: none;
+	margin: 0 0.75em 0 0;
+	padding: 0;
+}
+
+img {
+	height: 3em;
+	margin-bottom: 0;
+}
+
+/* SUBMIT BUTTON */
+.submit-btn-pushable {
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	outline-offset: 4px;
+	padding: 0;
+	position: relative;
+	touch-action: manipulation;
+	transition: filter 250ms;
+	user-select: none;
+	-webkit-user-select: none;
+}
+
+.submit-btn-shadow {
+	background: hsl(0deg 0% 0% / 0.25);
+	border-radius: 12px;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	transform: translateY(2px);
+	transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+	width: 100%;
+	will-change: transform;
+}
+
+.submit-btn-edge {
+	background: linear-gradient(
+		to left,
+		hsl(45 100% 16%) 0%,
+		hsl(45 100% 32%) 8%,
+		hsl(45 100% 32%) 92%,
+		hsl(45 100% 16%) 100%
+	);
+	border-radius: 12px;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.submit-btn-front {
+	background: var(--picton-blue);
+	border-radius: 12px;
+	color: var(--yamber);
+	display: block;
+	font-family: 'Bungee', cursive;
+	font-size: 1.1rem;
+	padding: 12px 27px;
+	position: relative;
+	transform: translateY(-4px);
+	transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+	will-change: transform;
+}
+
+@media (min-width: 768px) {
+	.submit-btn-front {
+		font-size: 1.25rem;
+		padding: 12px 42px;
+	}
+}
+
+.submit-btn-pushable:hover {
+	filter: brightness(110%);
+	-webkit-filter: brightness(110%);
+}
+
+.submit-btn-pushable:hover .submit-btn-front {
+	transform: translateY(-6px);
+	transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+
+.submit-btn-pushable:active .submit-btn-front {
+	transform: translateY(-2px);
+	transition: transform 34ms;
+}
+
+.submit-btn-pushable:hover .submit-btn-shadow {
+	transform: translateY(4px);
+	transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+
+.submit-btn-pushable:active .submit-btn-shadow {
+	transform: translateY(1px);
+	transition: transform 34ms;
+}
+
+.submit-btn-pushable:focus:not(:focus-visible) {
+	outline: none;
+}
+
+/* 
+font-family: 'Bungee', cursive;
+font-family: 'Josefin Sans', 
+ */
