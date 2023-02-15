@@ -41,7 +41,6 @@ const Form = () => {
 						type={'text'}
 						className="form-control"
 						id="message-subject"
-						placeholder=""
 						value={subject}
 						onChange={handleSubject}
 					/>
@@ -56,12 +55,15 @@ const Form = () => {
 						onChange={handleMessage}
 					></textarea>
 				</div>
+				{/*  */}
 				<button
+					class="submit-btn-pushable"
 					type="submit"
-					className="btn btn-primary"
 					onClick={handleSubmit}
 				>
-					SEND
+					<span class="submit-btn-shadow"></span>
+					<span class="submit-btn-edge"></span>
+					<span class="submit-btn-front text">Submit</span>
 				</button>
 			</form>
 		</>
