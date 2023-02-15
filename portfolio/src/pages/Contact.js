@@ -18,7 +18,7 @@ const Contact = () => {
 						<Container id="contact-banner" type={'container'}>
 							<Row type={'row'}>
 								<h2 id="contact-greeting">Hello there!</h2>
-								<p>
+								<p id="contact-message">
 									Feel free to send me a message to get in touch, or if you
 									rather look around, here are another links to reach me.
 								</p>

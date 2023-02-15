@@ -14,7 +14,7 @@ const Projects = () => {
 			<Row type={'row'}>
 				{listOfProjects.map(project => {
 					return (
-						<Column size={'col-12 col-md-6'}>
+						<Column size={'col-12 col-md-6 col-lg-4'}>
 							<Card
 								key={project.id}
 								title={project.title}
