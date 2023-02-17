@@ -57,13 +57,13 @@ const Form = () => {
 				</div>
 				{/*  */}
 				<button
-					class="submit-btn-pushable"
+					className="submit-btn-pushable"
 					type="submit"
 					onClick={handleSubmit}
 				>
-					<span class="submit-btn-shadow"></span>
-					<span class="submit-btn-edge"></span>
-					<span class="submit-btn-front text">Submit</span>
+					<span className="submit-btn-shadow"></span>
+					<span className="submit-btn-edge"></span>
+					<span className="submit-btn-front text">Submit</span>
 				</button>
 			</form>
 		</>
