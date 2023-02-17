@@ -4,7 +4,7 @@
 
 A portfolio made with React implementing with the intention to showcase my work and give what has been learned throughout the course.
 
-![react-portfolio deployed](portfolio/public/static_assets/images/home-screenshot.png)
+![react-portfolio deployed](public/static_assets/images/home-screenshot.png)
 
 ## Table of contents
 
