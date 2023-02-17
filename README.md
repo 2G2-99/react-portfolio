@@ -6,6 +6,8 @@ A portfolio made with React implementing with the intention to showcase my work 
 
 ![react-portfolio deployed](public/static_assets/images/home-screenshot.png)
 
+![Deployed](https://santiago-gomez.netlify.app/)
+
 ## Table of contents
 
 - [react-portfolio](#react-portfolio)
