@@ -1,13 +1,12 @@
 // # IMPORTS
 // COMPONENTS
-import { Container, Row, Column, Card } from '../components/export';
+import { Container, Row, Column } from '../components/export';
 
 // SVG
 import {
 	HTML5Logo,
 	CSSLogo,
 	JSLogo,
-	JQueryLogo,
 	BootstrapLogo,
 	NodejsLogo,
 	selfie,

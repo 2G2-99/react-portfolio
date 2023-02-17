@@ -1,4 +1,4 @@
-import { Container, Row, Hero } from '../components/export';
+import { Container, Hero } from '../components/export';
 
 const Home = () => {
 	return (
