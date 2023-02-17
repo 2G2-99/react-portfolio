@@ -2,13 +2,60 @@
 // REACT
 import { NavLink } from 'react-router-dom';
 
+// COMPONENTS
+import HeaderWrapper from '../../HeaderWrapper/index';
+
 // STYLE
 import './index.css';
 
 const Navbar = () => {
 	return (
 		<>
-			<nav className="custom-navbar navbar navbar-expand">
+			<HeaderWrapper>
+				<div className="custom-navbar">
+					<h1 className="brand">Santiago Gomez</h1>
+					<nav className="nav nav-head justify-content-center">
+						<NavLink
+							to="/"
+							end
+							className={({ isActive }) =>
+								isActive ? 'nav-link active' : 'nav-link'
+							}
+						>
+							Home
+						</NavLink>
+						<NavLink
+							to="about"
+							end
+							className={({ isActive }) =>
+								isActive ? 'nav-link active' : 'nav-link'
+							}
+						>
+							About
+						</NavLink>
+						<NavLink
+							to="projects"
+							end
+							className={({ isActive }) =>
+								isActive ? 'nav-link active' : 'nav-link'
+							}
+						>
+							Projects
+						</NavLink>
+						<NavLink
+							to="contact"
+							end
+							className={({ isActive }) =>
+								isActive ? 'nav-link active' : 'nav-link'
+							}
+						>
+							Contact
+						</NavLink>
+					</nav>
+				</div>
+			</HeaderWrapper>
+
+			{/* <nav className="custom-navbar navbar navbar-expand">
 				<span className="navbar-brand">Santiago Gomez</span>
 
 				<ul className="navbar-nav nav nav-tabs border-bottom-0">
@@ -57,7 +104,7 @@ const Navbar = () => {
 						</NavLink>
 					</li>
 				</ul>
-			</nav>
+			</nav> */}
 		</>
 	);
 };

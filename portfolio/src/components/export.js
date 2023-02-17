@@ -1,3 +1,5 @@
+// WRAPPERS
+import HeaderWrapper from './HeaderWrapper';
 import Wrapper from './Wrapper';
 
 // MAIN COMPONENTS
@@ -12,4 +14,14 @@ import Hero from './main/Hero';
 import Navbar from './header/Navbar';
 
 // # Exporting components
-export { Wrapper, Container, Row, Column, Card, Form, Hero, Navbar };
+export {
+	HeaderWrapper,
+	Wrapper,
+	Container,
+	Row,
+	Column,
+	Card,
+	Form,
+	Hero,
+	Navbar,
+};

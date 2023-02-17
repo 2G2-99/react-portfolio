@@ -10,35 +10,47 @@
 	background-color: var(--yimn-blue);
 	color: white;
 	font-family: 'Bungee', cursive;
-	height: 4em;
+	height: 6.125em;
+	padding-top: 0.75em;
+	position: relative;
 }
 
-.custom-navbar span {
+.brand {
 	font-size: 2.25em;
+	margin-left: 0.25em;
 }
 
-.navbar-nav {
-	border: none;
-	bottom: 0;
-	position: absolute;
-	right: 1em;
+@media (min-width: 48em) {
+	.custom-navbar {
+		height: 3.25em;
+	}
+
+	.brand {
+		float: left;
+	}
+
+	.nav-head {
+		float: right;
+		margin-right: 1em;
+	}
 }
 
-.nav-item {
-	margin-bottom: 0;
+.nav-link {
+	border-top-left-radius: 0.5em;
+	border-top-right-radius: 0.5em;
 }
 
-.nav-tabs > li > a.active {
+.nav-link.active {
 	background-color: var(--picton-blue) !important;
 	border: 0;
 	color: var(--ut-orange) !important;
 }
 
-.nav-tabs > li > a.nav-link:visited {
+.nav-link.nav-link:visited {
 	color: white;
 }
 
-.nav-tabs > li > a.nav-link:hover {
+.nav-link.nav-link:hover {
 	border: none;
 	color: var(--yamber);
 }
