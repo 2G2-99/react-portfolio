@@ -5,15 +5,7 @@ import { GoTo, GitHubLogo } from '../../../assets/export';
 // STYLE
 import './index.css';
 
-const Card = ({
-	id,
-	title,
-	picture,
-	description,
-	technologies,
-	repository,
-	deployed,
-}) => {
+const Card = ({ id, title, picture, technologies, repository, deployed }) => {
 	// # FUNCTIONS
 
 	// Generate link buttons
@@ -44,7 +36,6 @@ const Card = ({
 				alt={`Screenshot of ${title}`}
 			/>
 			<div className="card-body h-100">
-				<p className="card-text">{description}</p>
 				<ul id="technologies" className="list-group list-group-horizontal">
 					{technologies}
 				</ul>

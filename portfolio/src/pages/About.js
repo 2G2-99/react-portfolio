@@ -29,21 +29,22 @@ const About = () => {
 								</Row>
 								<Row type={'row'}>
 									<p className="card-text">
-										<span id="greeting">Hello again!</span> as you might have
-										seen on the top of the page, my name is Santiago and I'm a
-										front-end developer with experience in hospitality. To be
-										more exact, in restaurants since I enjoy cooking and
-										preparing food as much as eating it.
+										<span id="greeting">Hello again!</span> I am part of that
+										generation that started to have access to internet and not
+										only a computer but different devices (of which, several
+										went to the technician.), and there has been a huge gap
+										between use and knowledge about technology.
 									</p>
 									<p className="card-text">
-										Having experienced what is to work in a fast paced
-										environment has given me the opportunity to learn about how
-										to work under pressure and still achieve great results. Now
-										I'm looking on another direction trying to take on a
-										challenge as a web developer, in a constantly innovating
-										industry.
+										What captured my attention and started to make many
+										questions, leading me into more and more doubts. And thus,
+										in search for those answers I started to feel some
+										attraction to discover the huge amount of things to do and
+										why not, create.
 									</p>
-									<p className="card-text"></p>
+									<p className="card-text">
+										So, feel free to check on anything you find!
+									</p>
 								</Row>
 								<Row type={'row'}>
 									<button className="btn-resume-pushable">

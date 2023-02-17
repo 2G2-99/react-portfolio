@@ -8,7 +8,7 @@ import './index.css';
 const Navbar = () => {
 	return (
 		<>
-			<nav className="custom-navbar navbar fixed-top flex-column flex-md-row  navbar-expand  justify-content-between">
+			<nav className="custom-navbar navbar navbar-expand">
 				<span className="navbar-brand">Santiago Gomez</span>
 
 				<ul className="navbar-nav nav nav-tabs border-bottom-0">
