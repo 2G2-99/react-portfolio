@@ -1,34 +1,20 @@
 [
 	{
 		"id": "01",
-		"title": "Team Profile",
-		"picture": "../static_assets/images/team_builder.png",
-		"description": "An inquirer application that generates a web page rendering cards with the gathered information from a manager and the development team.",
+		"title": "Password Generator",
+		"picture": "../static_assets/images/password_generator.png",
+		"description": "An easy tool to generate random passwords with the parameters given by the user through a series of prompts.",
 		"technologies": [
 			{
 				"id": "01",
-				"technology": "Bootstrap",
-				"path": "../static_assets/svg/bootstrap-svgrepo-com.svg"
-			},
-			{
-				"id": "02",
 				"technology": "JavaScript",
 				"path": "../static_assets/svg/javascript-svgrepo-com.svg"
-			},
-			{
-				"id": "03",
-				"technology": "Git",
-				"path": "../static_assets/svg/git-svgrepo-com.svg"
-			},
-			{
-				"id": "04",
-				"technology": "Node.js",
-				"path": "../static_assets/svg/node-js-svgrepo-com.svg"
 			}
 		],
-		"repository": "https://github.com/2G2-99/team-profile-app",
-		"deployed": ""
+		"repository": "https://github.com/2G2-99/password-generator",
+		"deployed": "https://2g2-99.github.io/password-generator/"
 	},
+
 	{
 		"id": "02",
 		"title": "README file generator",
@@ -86,18 +72,33 @@
 	},
 	{
 		"id": "04",
-		"title": "Password Generator",
-		"picture": "../static_assets/images/password_generator.png",
-		"description": "An easy tool to generate random passwords with the parameters given by the user through a series of prompts.",
+		"title": "Team Profile",
+		"picture": "../static_assets/images/team_builder.png",
+		"description": "An inquirer application that generates a web page rendering cards with the gathered information from a manager and the development team.",
 		"technologies": [
 			{
 				"id": "01",
+				"technology": "Bootstrap",
+				"path": "../static_assets/svg/bootstrap-svgrepo-com.svg"
+			},
+			{
+				"id": "02",
 				"technology": "JavaScript",
 				"path": "../static_assets/svg/javascript-svgrepo-com.svg"
+			},
+			{
+				"id": "03",
+				"technology": "Git",
+				"path": "../static_assets/svg/git-svgrepo-com.svg"
+			},
+			{
+				"id": "04",
+				"technology": "Node.js",
+				"path": "../static_assets/svg/node-js-svgrepo-com.svg"
 			}
 		],
-		"repository": "https://github.com/2G2-99/password-generator",
-		"deployed": "https://2g2-99.github.io/password-generator/"
+		"repository": "https://github.com/2G2-99/team-profile-app",
+		"deployed": ""
 	},
 	{
 		"id": "05",

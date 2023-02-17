@@ -1,17 +1,15 @@
-import { Container, Row, Hero } from '../components/export';
+import { Container, Hero } from '../components/export';
 
 const Home = () => {
 	return (
 		<>
-			<Row type={'row'}>
-				<Container
-					type={
-						'container-fluid d-flex justify-content-center align-items-center'
-					}
-				>
-					<Hero />
-				</Container>
-			</Row>
+			{/* <Container
+				type={
+					'container-fluid d-flex justify-content-center align-items-center'
+				}
+			> */}
+			<Hero />
+			{/* </Container> */}
 			<span className="attribution">
 				Background by:{' '}
 				<a
